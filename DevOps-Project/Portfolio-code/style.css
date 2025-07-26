@@ -1,77 +1,240 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 
+
+ 
 body {
-  background: linear-gradient(to right, #f9f9f9, #e1ecf4);
-  color: #222;
-  line-height: 1.6;
-  padding: 20px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #eee;
 }
 
 header {
-  background-color: #0077b6;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
-  margin-bottom: 20px;
+    background-color: #222;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
-p {
-  font-size: 1.1rem;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
 }
 
-section {
-  margin: 30px 0;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
 }
 
-h2 {
-  color: #023e8a;
-  margin-bottom: 15px;
+nav ul li a.active,
+nav ul li a:hover {
+    color: #00ffd5;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
+.hero {
+    padding: 5em 2em;
+    text-align: center;
 }
 
-ul li {
-  padding: 8px 0;
-  font-size: 1rem;
-  color: #444;
+.hero h2 span {
+    color: #00ffd5;
 }
 
-.skills li::before {
-  content: "✓ ";
-  color: green;
-  margin-right: 5px;
+.button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background-color: #00ffd5;
+    color: #111;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-a {
-  color: #0077b6;
-  text-decoration: none;
+.button:hover {
+    background-color: #00c2aa;
 }
 
-a:hover {
-  text-decoration: underline;
+.projects,
+.contact {
+    padding: 3em 2em;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.project-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 2em;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1em;
+    color: #00ffd5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-top: 3em;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-list li {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(145deg, #6a00f4, #d600ff);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.2em;
+    box-shadow: 0 10px 20px rgba(255, 0, 255, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-list li:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(255, 0, 255, 0.4);
+}
+
+.contact-list li i {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+.contact-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 footer {
-  text-align: center;
-  margin-top: 40px;
-  color: #555;
-  font-size: 0.9rem;
+    text-align: center;
+    padding: 1.5em;
+    background-color: #222;
+    color: #aaa;
+    font-size: 0.9em;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1c0033, #330055);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #111;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    margin-right: 1em;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+    color: #00f7ff !important;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: #00f7ff;
+}
+
+.btn-custom {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    background-color: #00f7ff;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #00c7cc;
+    color: #fff;
+}
+
+.skills {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+.skills h2 {
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.skill-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #111;
+    padding: 1rem;
+    color: #aaa;
+    text-align: center;
 }
